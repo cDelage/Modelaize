@@ -23,8 +23,12 @@
 - Step 1 : Describe the application into a prompt
 <div align="center"><img src="./public/prompt.png"/></div>
 
+
+
 - Step 2 : Fulfill an application description sheet
 <div align="center"><img src="./public/app_desc_sheet.png"/></div>
+
+
 
 - Step 3 : You can rework the generated models and services with the chatbot to adapt to your need.
 
