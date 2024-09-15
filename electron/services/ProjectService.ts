@@ -352,7 +352,7 @@ export async function manualApplyVersion({
         dateCreation: new Date(),
         projectVersion: {
           ...versionToApply,
-          version: historic.length,
+          version: historic.filter(x => x.projectVersion).length + 1,
           fromVersion: versionToApply.version,
         },
         isManualReapply: true,
