@@ -104,7 +104,7 @@ function NodeEntity({
         const headerSize = tableHeaderRef.current.offsetHeight;
         const fieldSize = fieldsRefs.current[0].offsetHeight;
         const index =
-          fields.findIndex((field) => handle.startsWith(field.fieldId)) + 0.5;
+          fields.findIndex((field) => field?.fieldId && handle.startsWith(field.fieldId)) + 0.5;
         return `${fieldSize * index + headerSize}px`;
       }
       return "50%";
@@ -164,7 +164,7 @@ function NodeEntity({
             <div>{field.name}</div>
             <div>
               {field.primaryKey && <IoKey color="var(--color-secondary-500)" />}
-              {!field.primaryKey && isForeignKey(field.fieldId) && (
+              {!field.primaryKey && field.fieldId && isForeignKey(field.fieldId) && (
                 <IoKey color="var(--color-gray-500)" />
               )}
             </div>

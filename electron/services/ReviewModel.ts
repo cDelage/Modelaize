@@ -6,19 +6,9 @@ import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { createOpenAIFunctionsAgent, AgentExecutor } from "langchain/agents";
 import { getSettings } from "./SettingsService";
 import { ChatOpenAI } from "@langchain/openai";
-import {
-  getCreateNewEntities,
-  getCreateNewRelations,
-  getCreateNewServices,
-  getRemoveEntity,
-  getRemoveRelation,
-  getRemoveServices,
-  getUpdateExistingEntities,
-  getUpdateRelations,
-  getUpdateServices,
-} from "./ProjectDynamicStructuredTools";
-import { getModelParser } from "./ModelUtils";
 import { ApplicationDescriptionSheet } from "../types/ApplicationDescriptionSheet.type";
+import { getCreateNewEntities, getCreateNewRelations, getCreateNewServices, getRemoveEntity, getRemoveRelation, getRemoveServices, getUpdateExistingEntities, getUpdateRelations, getUpdateServices } from "./ProjectDynamicStructuredToolsUtil";
+import { getModelParser } from "./ModelUtil";
 
 export async function reviewNewModel({
   input, newProjectVersion, applicationDescriptionSheet

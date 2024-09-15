@@ -3,9 +3,9 @@
  */
 {
   "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
-  "appId": "com.gen.gen-cdm",
+  "appId": "com.gen.modelaize",
   "asar": true,
-  "productName": "GEN-CDM",
+  "productName": "Modelaize",
   "directories": {
     "output": "release/${version}",
     "buildResources": "build"

@@ -102,7 +102,7 @@ export const getUpdateExistingEntities = (
         objectToUpdate: "entity",
         successObjects,
         failToFind,
-        searchInto,
+        searchInto : searchInto as string[],
       });
     },
   });
@@ -175,7 +175,7 @@ export const getRemoveEntity = (projectVersion: ProjectVersionDataPayload) => {
         objectToUpdate: "entities",
         successObjects,
         failToFind,
-        searchInto,
+        searchInto : searchInto as string[],
       });
     },
   });
@@ -265,7 +265,7 @@ export const getUpdateRelations = (
         objectToUpdate: "relations",
         successObjects,
         failToFind,
-        searchInto,
+        searchInto : searchInto as string[],
       });
     },
   });
@@ -310,7 +310,7 @@ export const getRemoveRelation = (
         objectToUpdate: "relations",
         successObjects,
         failToFind,
-        searchInto,
+        searchInto : searchInto as string[],
       });
     },
   });
@@ -367,7 +367,7 @@ export const getRemoveServices = (
         objectToUpdate: "services",
         successObjects,
         failToFind,
-        searchInto,
+        searchInto : searchInto as string[],
       });
     },
   });
@@ -411,7 +411,7 @@ export const getUpdateServices = (
         objectToUpdate: "services",
         successObjects,
         failToFind,
-        searchInto,
+        searchInto : searchInto as string[],
       });
     },
   });

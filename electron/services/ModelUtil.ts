@@ -93,7 +93,7 @@ export const relationsToEdge = (
       }
       return undefined;
     })
-    .filter((relation) => relation !== undefined);
+    .filter((relation) => relation !== undefined) as Edge<DataRelation>[];
 };
 
 export const getCardinalityTarget = (relation: RelationParser): Cardinality => {

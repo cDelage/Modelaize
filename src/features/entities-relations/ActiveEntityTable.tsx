@@ -1,10 +1,7 @@
 import { Table, Td, Th, THead, TrBody, TrHeader } from "../../ui/tables/Table";
 import { Column, Row } from "../../ui/layout/Flexbox";
-import Loader from "../../ui/layout/Loader";
-import { useParams, useSearchParams } from "react-router-dom";
 import {
   useActiveEntityTable,
-  useGetProjectById,
 } from "../project/ProjectQueries";
 import { Checkbox } from "../../ui/forms/Checkbox";
 import { IoKey } from "react-icons/io5";
